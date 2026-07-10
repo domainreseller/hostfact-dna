@@ -7,6 +7,12 @@
 
 # DomainNameApi Integratie Documentatie (NL)
 
+## 📦 Download — gebruik altijd de Releases!
+
+⬇️ **Download hier de nieuwste geteste versie: https://github.com/domainreseller/hostfact-dna/releases/latest**
+
+> ⚠️ Gebruik **niet** de groene knop **Code → Download ZIP** — daarmee downloadt u de ruwe ontwikkelbranch. Release-pakketten zijn geversioneerd, getest en klaar voor productie.
+
 ## Installatie
 
 1.  Plaats de map `domainnameapi` in de map `Pro/3rdparty/domain/`, of upload deze via FTP.
@@ -29,6 +35,20 @@
     ![img3.png](img3.png)
 
 5.  Klik op **"Opslaan"**.
+
+## 🔑 API-inloggegevens — Gebruikersnaam/Wachtwoord of Reseller ID/API Key?
+
+Beide worden ondersteund — vul ze in dezelfde twee modulevelden in; de module detecteert automatisch welke API gebruikt moet worden:
+
+| U heeft | Veld "Gebruikersnaam" | Veld "Wachtwoord" | Gebruikte API |
+|---|---|---|---|
+| **Nieuwe panelgegevens** (aanbevolen) | Reseller ID — UUID zoals `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` | API Key | REST |
+| **Legacy-gegevens** | API-gebruikersnaam | API-wachtwoord | SOAP |
+
+> 💡 U vindt uw **Reseller ID** en **API Key** in uw DomainNameAPI-panel onder **API Settings**.
+> ⚠️ Dit zijn **API-inloggegevens** — het e-mailadres en wachtwoord waarmee u in het panel inlogt, werken hier **niet**.
+
+Er is geen extra configuratie nodig — als het gebruikersnaamveld een UUID bevat, gebruikt de module de moderne REST API, anders de klassieke SOAP API.
 
 ## Domeinen Importeren
 

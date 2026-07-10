@@ -7,6 +7,12 @@
 
 # DomainNameApi Integrationsdokumentation (DE)
 
+## 📦 Download — verwenden Sie immer die Releases!
+
+⬇️ **Die neueste getestete Version erhalten Sie hier: https://github.com/domainreseller/hostfact-dna/releases/latest**
+
+> ⚠️ Verwenden Sie **nicht** den grünen Button **Code → Download ZIP** — damit laden Sie den unbearbeiteten Entwicklungsbranch herunter. Release-Pakete sind versioniert, getestet und produktionsreif.
+
 ## Installation
 
 1.  Legen Sie den Ordner `domainnameapi` im Verzeichnis `Pro/3rdparty/domain/` ab oder laden Sie ihn per FTP hoch.
@@ -29,6 +35,20 @@
     ![img3.png](img3.png)
 
 5.  Klicken Sie auf **"Speichern"**.
+
+## 🔑 API-Zugangsdaten — Benutzername/Passwort oder Reseller ID/API Key?
+
+Beides wird unterstützt — tragen Sie die Daten in dieselben zwei Modulfelder ein; das Modul erkennt automatisch, welche API verwendet wird:
+
+| Sie haben | Feld "Benutzername" | Feld "Passwort" | Verwendete API |
+|---|---|---|---|
+| **Neue Panel-Zugangsdaten** (empfohlen) | Reseller ID — UUID wie `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` | API Key | REST |
+| **Legacy-Zugangsdaten** | API-Benutzername | API-Passwort | SOAP |
+
+> 💡 Ihre **Reseller ID** und Ihren **API Key** finden Sie in Ihrem DomainNameAPI-Panel unter **API Settings**.
+> ⚠️ Dies sind **API-Zugangsdaten** — die E-Mail-Adresse und das Passwort Ihres Panel-Logins funktionieren hier **nicht**.
+
+Es ist keine zusätzliche Konfiguration erforderlich — enthält das Benutzernamenfeld eine UUID, verwendet das Modul die moderne REST API, andernfalls das klassische SOAP.
 
 ## Domains importieren
 
