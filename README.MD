@@ -30,25 +30,18 @@
 3.  Selecteer **"DomainNameApi"** als de API.
 
 
-4.  Voer uw gebruikersnaam en wachtwoord in.
+4.  Voer uw Reseller ID en API Key in (zie hieronder).
 
     ![img3.png](img3.png)
 
 5.  Klik op **"Opslaan"**.
 
-## 🔑 API-inloggegevens — Gebruikersnaam/Wachtwoord of Reseller ID/API Key?
+## 🔑 API-inloggegevens
 
-Beide worden ondersteund — vul ze in dezelfde twee modulevelden in; de module detecteert automatisch welke API gebruikt moet worden:
-
-| U heeft | Veld "Gebruikersnaam" | Veld "Wachtwoord" | Gebruikte API |
-|---|---|---|---|
-| **Nieuwe panelgegevens** (aanbevolen) | Reseller ID — UUID zoals `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` | API Key | REST |
-| **Legacy-gegevens** | API-gebruikersnaam | API-wachtwoord | SOAP |
+Vul uw **Reseller ID** in het HostFact-veld "Gebruikersnaam" en uw **API Key** in het veld "Wachtwoord" in.
 
 > 💡 U vindt uw **Reseller ID** en **API Key** in uw DomainNameAPI-panel onder **API Settings**.
-> ⚠️ Dit zijn **API-inloggegevens** — het e-mailadres en wachtwoord waarmee u in het panel inlogt, werken hier **niet**.
-
-Er is geen extra configuratie nodig — als het gebruikersnaamveld een UUID bevat, gebruikt de module de moderne REST API, anders de klassieke SOAP API.
+> ⚠️ Dit zijn **API-inloggegevens** — uw inloggegevens voor het panel werken hier **niet**.
 
 ## Domeinen Importeren
 

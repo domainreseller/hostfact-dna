@@ -30,25 +30,18 @@
 3.  API olarak **"DomainNameApi"** seçeneğini seçin.
 
 
-4.  Kullanıcı adınızı ve şifrenizi girin.
+4.  Reseller ID ve API Key bilgilerinizi girin (aşağıya bakın).
 
     ![img3.png](img3.png)
 
 5.  **"Kaydet"** düğmesine tıklayın.
 
-## 🔑 API Kimlik Bilgileri — Kullanıcı Adı/Şifre mi, Reseller ID/API Key mi?
+## 🔑 API Kimlik Bilgileri
 
-Her ikisi de desteklenir — bilgileri aynı iki modül alanına girin; modül hangi API'nin kullanılacağını otomatik olarak algılar:
-
-| Elinizdeki bilgi | "Kullanıcı Adı" alanı | "Şifre" alanı | Kullanılan API |
-|---|---|---|---|
-| **Yeni panel kimlik bilgileri** (önerilen) | Reseller ID — `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` biçiminde UUID | API Key | REST |
-| **Eski (legacy) kimlik bilgileri** | API kullanıcı adı | API şifresi | SOAP |
+**Reseller ID** bilginizi HostFact'in "Username" alanına, **API Key** bilginizi "Password" alanına girin.
 
 > 💡 **Reseller ID** ve **API Key** bilgilerinizi DomainNameAPI panelinizdeki **API Ayarları** bölümünde bulabilirsiniz.
-> ⚠️ Bunlar **API kimlik bilgileridir** — panele giriş yaptığınız e-posta/şifre burada **ÇALIŞMAZ**; API Ayarları bölümündeki Reseller ID (UUID) ve API Key kullanılmalıdır.
-
-Ek bir yapılandırma gerekmez — kullanıcı adı alanında bir UUID varsa modül modern REST API'yi, aksi halde klasik SOAP API'yi kullanır.
+> ⚠️ Bunlar **API kimlik bilgileridir** — panele giriş bilgileriniz burada **ÇALIŞMAZ**; API Ayarları bölümündeki Reseller ID ve API Key kullanılmalıdır.
 
 ## Alan Adlarını İçe Aktarma
 

@@ -30,25 +30,18 @@
 3.  Wählen Sie **"DomainNameApi"** als API aus.
 
 
-4.  Geben Sie Ihren Benutzernamen und Ihr Passwort ein.
+4.  Geben Sie Ihre Reseller ID und Ihren API Key ein (siehe unten).
 
     ![img3.png](img3.png)
 
 5.  Klicken Sie auf **"Speichern"**.
 
-## 🔑 API-Zugangsdaten — Benutzername/Passwort oder Reseller ID/API Key?
+## 🔑 API-Zugangsdaten
 
-Beides wird unterstützt — tragen Sie die Daten in dieselben zwei Modulfelder ein; das Modul erkennt automatisch, welche API verwendet wird:
-
-| Sie haben | Feld "Benutzername" | Feld "Passwort" | Verwendete API |
-|---|---|---|---|
-| **Neue Panel-Zugangsdaten** (empfohlen) | Reseller ID — UUID wie `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` | API Key | REST |
-| **Legacy-Zugangsdaten** | API-Benutzername | API-Passwort | SOAP |
+Tragen Sie Ihre **Reseller ID** in das HostFact-Feld "Username" und Ihren **API Key** in das Feld "Password" ein.
 
 > 💡 Ihre **Reseller ID** und Ihren **API Key** finden Sie in Ihrem DomainNameAPI-Panel unter **API Settings**.
-> ⚠️ Dies sind **API-Zugangsdaten** — die E-Mail-Adresse und das Passwort Ihres Panel-Logins funktionieren hier **nicht**.
-
-Es ist keine zusätzliche Konfiguration erforderlich — enthält das Benutzernamenfeld eine UUID, verwendet das Modul die moderne REST API, andernfalls das klassische SOAP.
+> ⚠️ Dies sind **API-Zugangsdaten** — Ihre Panel-Anmeldedaten funktionieren hier **nicht**.
 
 ## Domains importieren
 

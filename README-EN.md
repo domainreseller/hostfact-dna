@@ -30,25 +30,18 @@
 3.  Select **"DomainNameApi"** as the API.
 
 
-4.  Enter your username and password.
+4.  Enter your Reseller ID and API Key (see below).
 
     ![img3.png](img3.png)
 
 5.  Click **"Save"**.
 
-## 🔑 API Credentials — Username/Password or Reseller ID/API Key?
+## 🔑 API Credentials
 
-Both are supported — enter them into the same two module fields; the module detects which API to use automatically:
-
-| You have | "Username" field | "Password" field | API used |
-|---|---|---|---|
-| **New panel credentials** (recommended) | Reseller ID — UUID like `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` | API Key | REST |
-| **Legacy credentials** | API username | API password | SOAP |
+Enter your **Reseller ID** into HostFact's "Username" field and your **API Key** into its "Password" field.
 
 > 💡 Find your **Reseller ID** and **API Key** in your DomainNameAPI panel under **API Settings**.
-> ⚠️ These are **API credentials** — your panel login e-mail and password will **not** work here.
-
-No extra configuration is needed — if the username field contains a UUID the module uses the modern REST API, otherwise classic SOAP.
+> ⚠️ These are **API credentials** — your panel login details will **not** work here.
 
 ## Importing Domains
 
