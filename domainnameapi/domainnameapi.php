@@ -34,6 +34,11 @@ class DomainNameApi implements IRegistrar
     public function dna(){
         if($this->dnaService == null){
             $this->dnaService = new DNA($this->User, $this->Password,false);
+            if (method_exists($this->dnaService, 'setClientInfo')) {
+                $version = [];
+                include __DIR__ . '/version.php';
+                $this->dnaService->setClientInfo('hostfact', (string) ($version['version'] ?? ''));
+            }
         }
         return $this->dnaService;
     }
